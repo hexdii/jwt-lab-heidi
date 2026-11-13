@@ -23,6 +23,18 @@ Se implementó una API vulnerable y se realizaron tres pruebas de seguridad:
 - Revocación de JWT mediante identificadores únicos (`jti`).
 - Validación de roles desde los datos del servidor.
 
+## Ejecución 
+
+1. Clonar el repositorio y abrir la carpeta del proyecto.
+2. Crear y activar el entorno virtual:
+   - `python -m venv venv`
+   - `.\venv\Scripts\Activate.ps1`
+3. Instalar las dependencias:
+   - `python -m pip install -r requirements.txt`
+4. Crear un archivo `.env` con una variable `JWT_SECRET` segura.
+5. Ejecutar la API:
+   - `python app.py`
+
 ## Conclusión
 
 El laboratorio permitió demostrar que la seguridad de JWT depende de una correcta validación de firmas, el uso de claves robustas y la gestión adecuada de la expiración y revocación de tokens.
